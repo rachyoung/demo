@@ -7,6 +7,14 @@ def encode(nums):
         result += str(3 + int(char))
     return result
 
+
+def decode(nums):
+    result = ""
+    for char in nums:
+        result += str(int(char) - 3)
+    return result
+
+
 def main():
     user_choice = 0
     plain = 0
